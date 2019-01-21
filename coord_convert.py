@@ -6,7 +6,7 @@ if len(sys.argv) > 3:
   ra_mins_as_secs = float(sys.argv[2])*60
   ra_total_secs = ra_mins_as_secs + float(sys.argv[3])
   ra_frac_degree = ra_degrees + ra_total_secs / 3600
-  print("RA: {}H {}M {}S => {} degrees".format(ra_degrees, sys.argv[2], sys.argv[3], ra_frac_degree))
+  print("RA: {}H {}M {}S => {} degrees".format(sys.argv[1], sys.argv[2], sys.argv[3], ra_degrees + ra_frac_degree))
   if len(sys.argv) > 6:
     dec_degrees = float(sys.argv[4])
     dec_mins_as_secs = float(sys.argv[5])*60
